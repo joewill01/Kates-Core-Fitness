@@ -19,7 +19,6 @@ p {
     margin: 0;
 }
 
-
 .home-logo {
     margin-top: 30px;
     width: 25%;
@@ -115,11 +114,32 @@ p {
 @media screen and (min-width: 727px) {
     .image-block img {
     width: 25%;
-}
+    }
 }
 
 .gradient-blue {
-    background-image: linear-gradient(120deg, #155799, #159957);
+    background: linear-gradient(270deg, #155799, #159957);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimatedGradient 4s ease infinite;
+    -moz-animation: AnimatedGradient 4s ease infinite;
+    animation: AnimatedGradient 4s ease infinite;
+
+    @-webkit-keyframes AnimatedGradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @-moz-keyframes AnimatedGradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
+    @keyframes AnimatedGradient {
+        0%{background-position:0% 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0% 50%}
+    }
 }
 
 .full {
