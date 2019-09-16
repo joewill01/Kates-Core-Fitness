@@ -25,6 +25,28 @@ p {
     max-width: 6em;
 }
 
+.nav-holder {
+    background: none;
+    padding: 35px;
+    text-align: center;
+}
+
+.nav-holder-onscroll {
+    background-color: white;
+}
+
+.nav-logo {
+    background-image: url("../img/brand/logo_white.png");
+    background-size: cover;
+    height: 50px;
+    width: 114px;
+    display: inline-block;
+}
+
+.nav-logo-onscroll {
+    background-image: url("../img/brand/logo_black.png");
+}
+
 .front-holder {
     position: absolute;
    top: calc(50% - 75px);
