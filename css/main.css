@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
+html {
+    scroll-padding-top: 150px;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -28,7 +32,6 @@ p {
 .nav-holder {
     background: none;
     padding: 30px;
-    text-align: center;
     position: fixed;
     left: 0;
     right: 0;
@@ -40,8 +43,27 @@ p {
 .nav-holder-onscroll {
     background-color: white;
     transition: ease all 0.25s;
-    padding: 17px;
+    padding-top: 17px;
+    padding-bottom: 17px;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+}
+
+.nav-link {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    color: white;
+    opacity: 0.8;
+    margin: 0;
+    float: right;
+    transition: none;
+    padding: 15px;
+}
+
+.nav-link-onscroll {
+    color: black;
+    opacity: 1;
 }
 
 .nav-logo {
@@ -51,8 +73,10 @@ p {
     width: 100px;
     display: inline-block;
     margin-top: 3px;
+    margin-left: 5px;
     -webkit-transition: -webkit-transform 0.25s;
     transition: transform 0.25s;
+    float: left;
 }
 
 .nav-logo-onscroll {
