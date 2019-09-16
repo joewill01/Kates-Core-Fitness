@@ -33,6 +33,7 @@ p {
     left: 0;
     right: 0;
     transition: ease all 0.25s;
+    z-index: 99;
 }
 
 .nav-holder-onscroll {
@@ -60,11 +61,12 @@ p {
 
 .front-holder {
     position: absolute;
-   top: calc(50% - 75px);
+   top: calc(50% - 100px);
    height: 150px;
    text-align: center;
     left: 0;
     right:0;
+    padding: 10px;
 }
 
 .front-word {
