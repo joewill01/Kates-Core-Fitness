@@ -48,14 +48,15 @@ p {
     height: 44px;
     width: 100px;
     display: inline-block;
-    transition: ease all 0.25s;
     margin-top: 3px;
+    -webkit-transition: -webkit-transform 0.25s;
+    transition: transform 0.25s;
 }
 
 .nav-logo-onscroll {
     background-image: url("../img/brand/logo_black.svg");
-    height: 36px;
-    width: 82px;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
     transition: ease all 0.25s;
 }
 
