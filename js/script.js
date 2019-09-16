@@ -9,4 +9,3 @@ $(window).on("scroll", function() {
         $(".nav-link").removeClass("nav-link-onscroll");
     }
 });
-
