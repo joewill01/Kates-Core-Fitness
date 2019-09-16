@@ -55,8 +55,6 @@ p {
     transition: transform 0.25s;
 }
 
-
-
 .nav-logo-onscroll {
     background-image: url("../img/brand/logo_black.svg");
     -webkit-transform: scale(0.8);
