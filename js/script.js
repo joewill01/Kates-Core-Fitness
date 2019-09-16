@@ -12,7 +12,9 @@ $(window).on("scroll", function() {
     }
 });
 
-if ($(window).width() < 550) {
+
+function checkMobile() {
+    if ($(window).width() < 550) {
      $(".nav-holder-mobile").css("display", "block");
      $(".nav-holder").css("display", "none");
   }
@@ -20,16 +22,14 @@ if ($(window).width() < 550) {
     $(".nav-holder-mobile").css("display", "none");
      $(".nav-holder").css("display", "block");
  }
+}
 
 $(window).resize(function() {
-  if ($(window).width() < 550) {
-     $(".nav-holder-mobile").css("display", "block");
-     $(".nav-holder").css("display", "none");
-  }
- else {
-    $(".nav-holder-mobile").css("display", "none");
-     $(".nav-holder").css("display", "block");
- }
+  checkMobile()
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  checkMobile()
 });
 
  function hideMenu() {
