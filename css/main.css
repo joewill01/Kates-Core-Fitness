@@ -29,10 +29,16 @@ p {
     background: none;
     padding: 35px;
     text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: ease all 0.25s;
 }
 
 .nav-holder-onscroll {
     background-color: white;
+    transition: ease all 0.25s;
+    padding: 20px;
 }
 
 .nav-logo {
@@ -41,10 +47,14 @@ p {
     height: 50px;
     width: 114px;
     display: inline-block;
+    transition: ease all 0.25s;
 }
 
 .nav-logo-onscroll {
     background-image: url("../img/brand/logo_black.png");
+    height: 44px;
+    width: 100px;
+    transition: ease all 0.25s;
 }
 
 .front-holder {
