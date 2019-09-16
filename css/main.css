@@ -27,7 +27,7 @@ p {
 
 .nav-holder {
     background: none;
-    padding: 35px;
+    padding: 30px;
     text-align: center;
     position: fixed;
     left: 0;
@@ -38,22 +38,23 @@ p {
 .nav-holder-onscroll {
     background-color: white;
     transition: ease all 0.25s;
-    padding: 20px;
+    padding: 17px;
 }
 
 .nav-logo {
-    background-image: url("../img/brand/logo_white.png");
+    background-image: url("../img/brand/logo_white.svg");
     background-size: cover;
-    height: 50px;
-    width: 114px;
+    height: 44px;
+    width: 100px;
     display: inline-block;
     transition: ease all 0.25s;
+    margin-top: 3px;
 }
 
 .nav-logo-onscroll {
-    background-image: url("../img/brand/logo_black.png");
-    height: 44px;
-    width: 100px;
+    background-image: url("../img/brand/logo_black.svg");
+    height: 36px;
+    width: 82px;
     transition: ease all 0.25s;
 }
 
