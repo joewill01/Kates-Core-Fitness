@@ -1,3 +1,26 @@
+function checkMobile() {
+    if ($(window).width() < 550) {
+     $(".nav-holder-mobile").css("display", "block");
+     $(".nav-holder").css("display", "none");
+  }
+ else {
+    $(".nav-holder-mobile").css("display", "none");
+     $(".nav-holder").css("display", "block");
+ }
+}
+
+ function hideMenu() {
+     $("#hamburger-toggle").prop("checked", false);
+ }
+
+$(window).resize(function() {
+  checkMobile()
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    checkMobile();
+});
+
 $(window).on("scroll", function() {
     if($(window).scrollTop() > 60) {
         $(".nav-holder").addClass("nav-holder-onscroll");
@@ -12,26 +35,12 @@ $(window).on("scroll", function() {
     }
 });
 
-
-function checkMobile() {
-    if ($(window).width() < 550) {
-     $(".nav-holder-mobile").css("display", "block");
-     $(".nav-holder").css("display", "none");
+$(document).on("click", ".toggle-text-button", function() {
+  if ($(this).text() == "Read More") {
+    $(this).text("Read Less");
+    $(this).parent().children(".toggle-text").slideDown();
+  } else {
+    $(this).text("Read More");
+    $(this).parent().children(".toggle-text").slideUp();
   }
- else {
-    $(".nav-holder-mobile").css("display", "none");
-     $(".nav-holder").css("display", "block");
- }
-}
-
-$(window).resize(function() {
-  checkMobile()
 });
-
-document.addEventListener("DOMContentLoaded", function() {
-  checkMobile()
-});
-
- function hideMenu() {
-     $("#hamburger-toggle").prop("checked", false);
- }
