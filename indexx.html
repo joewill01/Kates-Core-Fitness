@@ -38,8 +38,8 @@
         <ul id="menu">
             <li><a href="#classes" onclick="hideMenu()">Classes</a></li>
             <li><a href="#about_me" onclick="hideMenu()">About Me</a></li>
-            <li><a href="#classes" onclick="hideMenu()">Timetable></a></li>
-            <li><a href="#classes" onclick="hideMenu()">Contact</a></li>
+            <li><a href="#timetable" onclick="hideMenu()">Timetable</a></li>
+            <li><a href="#contact" onclick="hideMenu()">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -49,8 +49,8 @@
 
     <!-- Links -->
     <a href="#main"><span class="nav-logo"></span></a>
-    <a href="#classes"><span class="nav-link">Contact</span></a>
-    <a href="#classes"><span class="nav-link">Timetable</span></a>
+    <a href="#contact"><span class="nav-link">Contact</span></a>
+    <a href="#timetable"><span class="nav-link">Timetable</span></a>
     <a href="#about_me"><span class="nav-link">About Me</span></a>
     <a href="#classes"><span class="nav-link">Classes</span></a>
 </div>
@@ -81,7 +81,9 @@
 
 <!-- Classes ------------------------------------------------------------------------------------------------------- -->
 
-<div class="block" id="classes">
+<span class="id" id="classes"></span>
+
+<div class="block">
     <div class="text-container">
 
         <!-- Header and spacers -->
@@ -192,7 +194,9 @@
 
 <!-- About Me ------------------------------------------------------------------------------------------------------ -->
 
-<div class="block" id="about_me">
+<span class="id" id="about_me"></span>
+
+<div class="block">
     <div class="text-container">
         <div style="height: 3em"></div>
         <h1>About Me</h1>
@@ -236,56 +240,100 @@
 
 <!-- Timetable ----------------------------------------------------------------------------------------------------- -->
 
-<div class="block" id="timetable">
+<span class="id" id="timetable"></span>
+
+<div class="block">
     <div class="text-container">
         <div style="height: 3em"></div>
         <h1>Timetable</h1>
         <div style="height: 2em"></div>
     </div>
+
+    <table class="tg">
+      <tr>
+        <th class="tg-friy" rowspan="2"><br>Day</th>
+        <th class="tg-friy" colspan="4">Class</th>
+      </tr>
+      <tr>
+        <td class="tg-usbd" colspan="2">Morning/Afternoon</td>
+        <td class="tg-usbd" colspan="2">Evening</td>
+      </tr>
+      <tr>
+        <td class="tg-a6rl">Monday</td>
+        <td class="tg-kfkg" colspan="2"><span style="font-weight:bold;font-style:italic">Pilates</span><br><br>HYPA Dance Studio<br>11:00am - 12:00pm</td>
+        <td class="tg-2nfg"><span style="font-weight:bold;font-style:italic">BarreBelles</span><br><br>Lightwoods Primary<br>6:30 - 7:30pm<br></td>
+        <td class="tg-kfkg"><span style="font-weight:bold;font-style:italic">Pilates</span><br><br>Lightwoods Primary<br>7:30 - 8:30pm<br></td>
+      </tr>
+      <tr>
+        <td class="tg-a6rl">Tuesday</td>
+        <td class="tg-p8w6" colspan="2"><span style="font-weight:bold;font-style:italic">Zumba Gold</span><br><br>1:30 - 2:30pm<br>Sandon Road Methodist</td>
+        <td class="tg-bjr2" colspan="2"></td>
+      </tr>
+      <tr>
+        <td class="tg-a6rl">Wednesday</td>
+        <td class="tg-bolj" colspan="2"></td>
+        <td class="tg-2nfg"><span style="font-weight:bold;font-style:italic">BarreBelles</span><br><br>Lapal Primary<br>6:30 - 7:30pm</td>
+        <td class="tg-kfkg"><span style="font-weight:bold;font-style:italic">Pilates</span><br><br>Lapal Primary<br>7:30 - 8:30pm</td>
+      </tr>
+      <tr>
+        <td class="tg-a6rl">Thursday</td>
+        <td class="tg-2nfg"><span style="font-weight:bold;font-style:italic">BarreBelles</span><br><br>HYPA Dance Studio<br>9:30 - 10:30am</td>
+        <td class="tg-kfkg"><span style="font-weight:bold;font-style:italic">Pilates</span><br><br>HYPA Dance Studio<br>10:30 - 11:30am</td>
+        <td class="tg-bolj" colspan="2"></td>
+      </tr>
+    </table>
+
+    <div style="height: 3em"></div>
 </div>
 
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
 <!-- Contact ------------------------------------------------------------------------------------------------------- -->
 
-<div class="block gradient-blue" id="contact">
+<span class="id" id="contact"></span>
+
+<div class="block gradient-blue">
     <div class="text-container">
 
         <div class="contactDetails">
-                <img src="img/contact.svg" width="50px" style="margin-top: 60px; margin-bottom: 40px;">
-                <h1>Kate Corbett</h1>
-                <p><br><br>Phone: <a href="tel:+447751385237" style="color: #000;">+44 7751 385237</a></p>
-                <p><br>Email: <a href="mailto:katescorefitness@gmail.com" style="color: #000;">katescorefitness@gmail.com</a></p>
+            <img src="img/contact.svg" width="50px" style="margin-top: 60px; margin-bottom: 40px;">
+            <h1>Kate Corbett</h1>
+            <p><br><br>Phone: <a href="tel:+447751385237" style="color: #000;">+44 7751 385237</a></p>
+            <p><br>Email: <a href="mailto:katescorefitness@gmail.com" style="color: #000;">katescorefitness@gmail.com</a></p>
 
-                <table style="display: inline-block;">
-                    <tr>
-                        <th style="padding: 0 20px;">
-                            <a href="https://www.instagram.com/katescorefitness/" target="_blank">
-                                <img src="img/brand/instagram_black.svg" width="30px" style="margin-top: 50px;">
+            <table style="display: inline-block;">
+
+                <tr>
+                    <th style="padding: 0 20px;">
+                        <a href="https://www.instagram.com/katescorefitness/" target="_blank">
+                            <img src="img/brand/instagram_black.svg" width="30px" style="margin-top: 50px;">
+                        </a>
+                        <p>
+                            <a href="https://www.instagram.com/katescorefitness/" target="_blank" style="color: #000;">
+                                @katescorefitness
                             </a>
-                            <p>
-                                <a href="https://www.instagram.com/katescorefitness/" target="_blank" style="color: #000;">
-                                    @katescorefitness
-                                </a>
-                            </p>
-                        </th>
-                    </tr>
+                        </p>
+                    </th>
+                </tr>
 
-                    <tr>
-                        <th style="padding: 0 20px;">
-                            <a href="https://www.facebook.com/katescorefitness/" target="_blank">
-                                <img src="img/brand/facebook_black.svg" width="30px" style="margin-top: 50px;">
+                <tr>
+                    <th style="padding: 0 20px;">
+                        <a href="https://www.facebook.com/katescorefitness/" target="_blank">
+                            <img src="img/brand/facebook_black.svg" width="30px" style="margin-top: 30px;">
+                        </a>
+                        <p>
+                            <a href="https://www.facebook.com/katescorefitness/" target="_blank" style="color: #000;">
+                                Kates Core Fitness
                             </a>
-                            <p>
-                                <a href="https://www.facebook.com/katescorefitness/" target="_blank" style="color: #000;">
-                                    Kates Core Fitness
-                                </a>
-                            </p>
-                        </th>
-                    </tr>
+                        </p>
+                    </th>
+                </tr>
 
-                </table>
-            </div>
+            </table>
+        </div>
+    </div>
+</div>
+
 
 <!-- --------------------------------------------------------------------------------------------------------------- -->
 
