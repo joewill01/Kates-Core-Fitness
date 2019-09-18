@@ -17,156 +17,169 @@
 
 <body>
 
+<!-- Navigation Bar ------------------------------------------------------------------------------------------------ -->
+
+<!-- ### Mobile ### -->
+<div class="nav-holder-mobile">
+
+    <!-- Kates Core Fitness logo -->
+    <a href="#main"><span class="nav-logo"></span></a>
+
+    <!-- Side menu -->
+    <div id="menuToggle">
+
+        <!-- Toggle -->
+        <input id="hamburger-toggle" type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+
+        <!-- Links -->
+        <ul id="menu">
+            <li><a href="#classes" onclick="hideMenu()">Classes</a></li>
+            <li><a href="#about_me" onclick="hideMenu()">About Me</a></li>
+            <li><a href="#classes" onclick="hideMenu()">Timetable></a></li>
+            <li><a href="#classes" onclick="hideMenu()">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- ### Desktop ### -->
+<div class="nav-holder">
+
+    <!-- Links -->
+    <a href="#main"><span class="nav-logo"></span></a>
+    <a href="#classes"><span class="nav-link">Contact</span></a>
+    <a href="#classes"><span class="nav-link">Timetable</span></a>
+    <a href="#about_me"><span class="nav-link">About Me</span></a>
+    <a href="#classes"><span class="nav-link">Classes</span></a>
+</div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+
+<!-- Main Page ----------------------------------------------------------------------------------------------------- -->
+
 <div class="block gradient-blue full" id="main">
 
-    <div class="nav-holder-mobile">
-        <a href="#main"><span class="nav-logo"></span></a>
-          <div id="menuToggle">
-            <input id="hamburger-toggle" type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="#classes" onclick="hideMenu()"><li>Classes</li></a>
-                <a href="#about_me" onclick="hideMenu()"><li>About Me</li></a>
-                <a href="#classes" onclick="hideMenu()"><li>Timetable</li></a>
-                <a href="#classes" onclick="hideMenu()"><li>Contact</li></a>
-            </ul>
-        </div>
-    </div>
-
-    <div class="nav-holder">
-        <a href="#main"><span class="nav-logo"></span></a>
-        <a href="#classes"><span class="nav-link">Contact</span></a>
-        <a href="#classes"><span class="nav-link">Timetable</span></a>
-        <a href="#about_me"><span class="nav-link">About Me</span></a>
-        <a href="#classes"><span class="nav-link">Classes</span></a>
-    </div>
-
-
     <div class="front-holder">
+
         <h1 class="front-word">BarreBelles</h1>
         <h2 class="front-description">Total. Body. Transformation.</h2>
+
     </div>
 
     <div class="scroll-holder">
+
         <p class="scroll-text">Scroll down for more information</p>
-        <img class="scroll-image" src="img/Scroll-down-white.png">
+        <span class="scroll-image">
+
     </div>
 
-
 </div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
 <!-- Classes ------------------------------------------------------------------------------------------------------- -->
 
 <div class="block" id="classes">
     <div class="text-container">
 
-        <!-- Block Header -->
+        <!-- Header and spacers -->
         <div style="height: 3em"></div>
         <h1>Classes</h1>
         <div style="height: 2em"></div>
 
+        <!-- ### BarreBelles ### -->
+        <div>
+            <!-- Title of class -->
+            <span class="barrebelles-logo"></span>
 
-        <!-- BarreBelles ------------------------------------------------------------------------------------------- -->
+            <!-- Spacer -->
+            <div style="height: 0.5em"></div>
+
+            <!-- Description of class -->
+            <p>
+                <!-- Always visible -->
+                Sculpt lean and toned muscles with this energizing and dynamic group class designed to challenge and
+                change your body — no dance experience or tutus required!
+            </p>
+
+            <p class="toggle-text"><br>
+                <!-- Only visible after clicking see more -->
+                BarreBelles efficiently blends Pilates with dance, cardio and strength-training specifically challenging
+                arms, legs and core to strengthen and lengthen the body. Powered by energizing, heart-pumping music that
+                makes you need to move, this class uses choreographed movement patterns with the support of a ballet
+                barre  to take you through a flow of high-powered sequences that will keep you energized and motivated.
+            </p>
+            <a class="toggle-text-button">Read More</a>
+
+            <!-- Spacer -->
+            <div style="height: 3em"></div>
+        </div>
+
+        <!-- ### Pilates ### -->
+        <div>
+            <!-- Title of class -->
+            <h2>Pilates</h2>
+
+            <!-- Spacer -->
+            <div style="height: 0.5em"></div>
+
+            <!-- Description of class -->
+            <p>
+                <!-- Always visible -->
+                The beauty about Pilates is that anybody can do it.  It is all about working and increasing core
+                strength which will in turn help improve weaknesses in the lower back and create a stronger and better
+                posture. As well as building strength, Pilates also increases flexibility.
+            </p>
+
+            <p class="toggle-text"><br>
+                <!-- Only visible after clicking see more -->
+                Flexibility can decrease as we get older,
+                as can core strength purely down to every day life.  If you are sat at a desk all day, or have job that
+                uses repetitive movements, chances are your posture will have suffered.  During my classes I offer
+                plenty of alternatives, ranging from basic to more advanced moves.  It is essential that you only work
+                to the level that you are comfortable with.  Pilates isn't a competition, it isn't about who can do the
+                most advanced version of an exercise - its about who can perform it the most safely and effectively.
+            </p>
+            <a class="toggle-text-button">Read More</a>
+
+            <!-- Spacer -->
+            <div style="height: 3em"></div>
+        </div>
+
+        <!-- ### Zumba Gold ### -->
         <div>
 
-        <!-- Title of class -->
-        <span class="barrebelles-logo"></span>
+            <!-- Title of class -->
+            <span class="zumba-gold-logo"></span>
 
-        <!-- Spacer -->
-        <div style="height: 0.5em"></div>
+            <!-- Spacer -->
+            <div style="height: 0.5em"></div>
 
-        <!-- Description of class -->
-        <p>
-            <!-- Always visible -->
-            Sculpt lean and toned muscles with this energizing and dynamic group class designed to challenge and change
-            your body — no dance experience or tutus required!
-        </p>
+            <!-- Description of class -->
+            <p>
+                <!-- Always visible -->
+                Zumba is for anybody.  You can work as hard or as easy as you like, alternatives are always given.
+            </p>
 
-        <p class="toggle-text"><br>
-            <!-- Only visible after clicking see more -->
-            BarreBelles efficiently blends Pilates with dance, cardio and strength-training specifically challenging
-            arms, legs and core to strengthen and lengthen the body. Powered by energizing, heart-pumping music that
-            makes you need to move, this class uses choreographed movement patterns with the support of a ballet barre
-            to take you through a flow of high-powered sequences that will keep you energized and motivated.
-        </p>
-        <a class="toggle-text-button">Read More</a>
+            <p class="toggle-text"><br>
+                <!-- Only visible after clicking see more -->
+                Don't worry if you have no co ordination, come and give it a try.  It's all about having fun! I
+                incorporate several dance rhythms from around the world such as salsa, reggaeton, samba, bhangra - to
+                name but a few!! All you need to bring with you is a smile :)
+            </p>
+            <a class="toggle-text-button">Read More</a>
 
-        <!-- Spacer -->
-        <div style="height: 3em"></div>
-
+            <!-- Spacer -->
+            <div style="height: 3em"></div>
         </div>
-        <!-- ------------------------------------------------------------------------------------------------------- -->
-
-        <!-- Pilates ----------------------------------------------------------------------------------------------- -->
-        <div>
-
-        <!-- Title of class -->
-        <h2>Pilates</h2>
-
-        <!-- Spacer -->
-        <div style="height: 0.5em"></div>
-
-        <!-- Description of class -->
-        <p>
-            <!-- Always visible -->
-            The beauty about Pilates is that anybody can do it.  It is all about working and increasing core strength
-            which will in turn help improve weaknesses in the lower back and create a stronger and better posture.
-            As well as building strength, Pilates also increases flexibility.
-        </p>
-
-        <p class="toggle-text"><br>
-            <!-- Only visible after clicking see more -->
-            Flexibility can decrease as we get older,
-            as can core strength purely down to every day life.  If you are sat at a desk all day, or have job that uses
-            repetitive movements, chances are your posture will have suffered.  During my classes I offer plenty of
-            alternatives, ranging from basic to more advanced moves.  It is essential that you only work to the level
-            that you are comfortable with.  Pilates isn't a competition, it isn't about who can do the most advanced
-            version of an exercise - its about who can perform it the most safely and effectively.
-        </p>
-        <a class="toggle-text-button">Read More</a>
-
-        <!-- Spacer -->
-        <div style="height: 3em"></div>
-
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------- -->
-
-        <!-- Zumba Gold -------------------------------------------------------------------------------------------- -->
-        <div>
-
-        <!-- Title of class -->
-        <span class="zumba-gold-logo"></span>
-
-        <!-- Spacer -->
-        <div style="height: 0.5em"></div>
-
-        <!-- Description of class -->
-        <p>
-            <!-- Always visible -->
-            Zumba is for anybody.  You can work as hard or as easy as you like, alternatives are always given.
-        </p>
-
-        <p class="toggle-text"><br>
-            <!-- Only visible after clicking see more -->
-            Don't worry if you have no co ordination, come and give it a try.  It's all about having fun! I incorporate
-            several dance rhythms from around the world such as salsa, reggaeton, samba, bhangra - to name but a few!!
-            All you need to bring with you is a smile :)
-        </p>
-        <a class="toggle-text-button">Read More</a>
-
-        <!-- Spacer -->
-        <div style="height: 3em"></div>
-
-        </div>
-        <!-- ------------------------------------------------------------------------------------------------------- -->
-
-
     </div>
 
+    <!-- 4 Pictures -->
     <div class="image-block" style="background: rgba(0,0,0,0.2)">
-        <img src="img/pictures/1.png"><img src="img/pictures/2.png"><img src="img/pictures/3.jpeg"><img src="img/pictures/4.jpeg">
+        <img src="img/pictures/1.png"><img src="img/pictures/2.png">
+        <img src="img/pictures/3.jpeg"><img src="img/pictures/4.jpeg">
     </div>
 </div>
 
@@ -209,8 +222,9 @@
 
         <div style="height: 3em"></div>
     </div>
-
 </div>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
 
 
 </body>

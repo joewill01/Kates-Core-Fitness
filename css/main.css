@@ -320,8 +320,12 @@ p {
 }
 
 .scroll-image {
-    padding-top: 10px;
-    height: 30px;
+    margin-top: 8px;
+    height: 19px;
+    width: 30px;
+    display: inline-block;
+    background-image: url("../img/arrow-down.svg");
+    background-size: cover;
 }
 
 .scroll-text {
