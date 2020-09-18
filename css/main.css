@@ -37,17 +37,6 @@ p {
     margin: 0;
 }
 
-.tg  {border-collapse:collapse;border-spacing:0; margin: 0 auto;}
-.tg td{font-family:"Open Sans", "Helvetica Neue", sans-serif;font-size:3vw;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg th{font-family:"Open Sans", "Helvetica Neue", sans-serif;font-size:3vw;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
-.tg .tg-usbd{font-weight:bold;background-color:#68cbd0;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-friy{font-weight:bold;text-decoration:underline;background-color:#9aff99;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-p8w6{background-color:#ffd186;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-z0uw{background-color:#dae8fc;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-i1vo{background-color:#e5e4ce;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-qy7a{"Open Sans", "Helvetica Neue", sans-serif !important;background-color:#ffccc9;border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-r31r{background-color:#ffccc9;border-color:#000000;text-align:center;vertical-align:top}
-
 @media screen and (min-width: 550px) {
     .tg td{font-size:14px;}
     .tg th{font-size:14px;}
