@@ -10,12 +10,175 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css?v=2.0.3">
 
+    <script src="js/anime.min.js"></script>
     <script src="js/jquery-2.1.0.min.js?v=1"></script>
     <script src="js/zenscroll-min.js?v=1"></script>
     <script src="js/script.js?v=2.0.3"></script>
 </head>
 
 <body>
+
+<style>
+    .black-overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: none;
+        opacity: 0;
+
+        background-color: rgba(0,0,0,0.6);
+        z-index: 999;
+    }
+
+    .black-overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    .popup-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: none;
+        opacity: 0;
+
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    .popup-container.active {
+        display: flex;
+        opacity: 1;
+    }
+
+    .popup-container .content {
+        position: relative;
+        background-color: white;
+        height: 70%;
+        width: 70%;
+        max-height: 400px;
+        max-width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 0 30px 10px rgba(0,0,0,0.3);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        padding: 30px;
+    }
+
+    .popup-container .content .top {
+        height: 30%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .popup-container .content .top h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .popup-container .content .bottom {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+    .popup-container .content .bottom p {
+        text-align: center;
+    }
+
+    .popup-container .close-button {
+        position: absolute;
+        top: 0px;
+        right: 7px;
+        padding: 20px;
+        font-family: sans-serif;
+        font-size: 30px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function show_popup() {
+        var tl = anime.timeline({
+          easing: 'easeOutExpo',
+          duration: 750
+        });
+
+        tl
+        .add({
+            targets: '#black-overlay',
+            opacity: 1,
+            begin: () => {
+                document.getElementById('black-overlay').style.display = 'block';
+            }
+        })
+        .add({
+            targets: '#popup-container',
+            opacity: 1,
+            translateY: [30, 0],
+            begin: () => {
+                document.getElementById('popup-container').style.display = 'flex';
+            }
+        }, '-=750')
+    }
+
+    function close_popup() {
+        var tl = anime.timeline({
+          easing: 'easeOutExpo',
+          duration: 750
+        });
+
+        tl
+        .add({
+            targets: '#black-overlay',
+            opacity: 0,
+            complete: () => {
+                document.getElementById('black-overlay').style.display = 'none';
+            }
+        })
+        .add({
+            targets: '#popup-container',
+            opacity: 0,
+            translateY: [0, 30],
+            complete: () => {
+                document.getElementById('popup-container').style.display = 'none';
+            }
+        }, '-=750')
+    }
+</script>
+
+<span class="black-overlay" id="black-overlay"></span>
+<div class="popup-container" id="popup-container">
+    <div class="content">
+        <span class="close-button" onclick="close_popup()">x</span>
+        <div class="top">
+            <h1>Lockdown offer!</h1>
+        </div>
+        <div class="bottom">
+            <p>Challenge yourself with a 30 minute workout each day Monday - Friday!<br><br> Buy all five, get one free.</p>
+            <br><br>
+            <h3><a href="https://katescorefitness.bookwhen.com" style="text-decoration:none; font-size: 14px; color: black; background-color: #bbb;padding: 8px 13px; border-radius: 100px">Go to BookWhen</a></h3>
+        </div>
+    </div>
+</div>
 
 <!-- Navigation Bar ------------------------------------------------------------------------------------------------ -->
 
@@ -75,7 +238,7 @@
         <div class="brand_holder" style="transform: scale(1.5); margin-bottom: 60px;">
             <span class="brand"></span><span class="vertical-line"></span><h1>LIVE</h1>
         </div>
-            <h2 class="front-description" style="width: 100%;">Kates Core Fitness LIVE is here. Click the link below to book.<br><a href="#update">Price and timetable changes (19/09/2020)</a><br><br><a href="https://katescorefitness.bookwhen.com" style="text-decoration:none; font-size: 14px; color: black; background-color: white; padding: 8px 13px; border-radius: 100px">Go to BookWhen</a></h3>
+            <h2 class="front-description" style="width: 100%;">Kates Core Fitness LIVE is here. Click the link below to book.<br><a onclick="show_popup()" href='#'>Lockdown Offer: Click here!</a><br><br><a href="https://katescorefitness.bookwhen.com" style="text-decoration:none; font-size: 14px; color: black; background-color: white; padding: 8px 13px; border-radius: 100px">Go to BookWhen</a></h3>
 
     </div>
     </div>
